@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENGANG OFFICIAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        main {
+            width: 70%;
+            text-align: left;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 30%;
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .scroll-button {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+        /* Styling for email link */
+        a {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ENGANG Official</h1>
+    </header>
+    <img src="ENGANG.png" alt="ENGANG Logo">
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our website! Hi guys, Aman here and I hope you guys are enjoying here about information. We mainly upload different movies, anime, as well as pictures, and you guys can download anything from our website...</p>
+        </section>
+        
+        <section id="products">
+            <h2>Our Products</h2>
+            <p>Our products mainly include movies, animes, and any types of pictures that you all demand from us. Enjoy our products!</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>You can contact us directly at <a href="mailto:reffamerofficial@gmail.com">reffamerofficial@gmail.com</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+
+    <div class="button-container">
+        <button class="scroll-button" onclick="scrollToSection('about')">About Us</button>
+        <button class="scroll-button" onclick="scrollToSection('products')">Our Products</button>
+        <button class="scroll-button" onclick="scrollToSection('contact')">Contact Us</button>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
